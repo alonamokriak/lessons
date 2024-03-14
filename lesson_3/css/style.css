@@ -1,0 +1,57 @@
+/* Скидання стилів */
+@import url(reset.css);
+
+/* Основні стилі */
+
+* {
+   color: green;
+}
+
+#voiting {
+   color: white;
+}
+
+.text {
+   color: blue;
+}
+
+p {
+   color: yellow;
+}
+
+[class*="itl"] {
+   color: maroon;
+}
+
+p.text {
+   color: violet;
+}
+
+.main__text .text {
+   color: skyblue;
+}
+
+.first-text,
+.secont-text {
+   color: blueviolet;
+}
+
+.link * {
+   color: lawngreen;
+}
+
+.link a {
+   color: grey;
+}
+
+.page__text ~ p {
+   color: slategrey;
+}
+
+.title + p {
+   color: sandybrown;
+}
+
+.title ~ p {
+   color: darkorange;
+}
