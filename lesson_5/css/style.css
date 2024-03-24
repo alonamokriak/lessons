@@ -1,0 +1,139 @@
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Локальне підключення шрифтів */
+@import url("fonts.css");
+
+/* Основні стилі */
+
+body {
+   font-family: "Proxima Nova", sans-serif;
+}
+
+header li{
+   text-align: center;
+   font-size: 26px;
+   padding: 10px;
+   text-shadow: 1px 1px 1px black;
+   color: rgb(255, 188, 87);
+   font-weight: 600;
+}
+
+.homework {
+   margin-bottom: 50px;
+}
+
+.group-discount {
+   max-width: 1920px;
+   background-color: rgba(30, 40, 50, 0.05);
+}
+
+.group-img {
+   max-width: 1500px;
+   margin: 0 auto;
+}
+
+.discount-title {
+   font-size: 50px;
+   line-height: 1.18;
+   text-align: center;
+   text-transform: capitalize;
+   margin-bottom: 60px;
+}
+
+.discount-photo {
+   display: inline-block;
+   padding: 20px;
+   margin: 0 -5px;
+}
+
+.bed {
+   margin-left: 50px;
+   line-height: 1.875;
+   max-width: 960px;
+}
+
+.title-bed {
+   font-weight: 700;
+   font-size: 40px;
+   text-align: center;
+}
+
+.title-krovato {
+   font-weight: 600;
+   margin-bottom: 40px;
+   line-height: 1.5;
+   font-size: 40px;
+   text-align: center;
+}
+
+.decor {
+   margin-left: 50px;
+   max-width: 1070px;
+   line-height: 1.875;
+   margin-bottom: 20px;
+}
+
+.photo-decor {
+   margin-bottom: 40px;
+}
+
+.sub-title {
+   font-size: 20px;
+   font-weight: 700;
+}
+
+.site {
+   margin-left: 50px;
+   max-width: 1070px;
+   font-size: 16px;
+   line-height: 1.875;
+}
+
+.item {
+   padding: 10px 47px;
+}
+
+.last-text{
+   margin-left: 50px;
+   max-width: 1070px;
+   line-height: 1.875;
+   font-size: 16px;
+}
+
+.block-krovato {
+   max-width: 1290px;
+   margin: 0 auto;
+}
+.block-krovato__container {
+   font-size: 0px;
+   margin: 0 -15px;
+}
+
+.title-text {
+   margin-top: 30px;
+   margin-bottom: 40px;
+   text-align: center;
+   font-weight: 600;
+   font-size: 40px;
+}
+.content-krovato {
+   width: 300px;
+   text-align: center;
+   vertical-align: top;
+   display: inline-block;
+   font-size: 16px;
+   line-height: 1.875;
+   padding: 0 15px;
+}
+
+.container-krovato img {
+   margin-bottom: 20px;
+}
+
+.subtitle-krovato {
+   font-size: 26px;
+   font-weight: 600;
+   line-height: 1.307;
+   margin-bottom: 20px;
+}
