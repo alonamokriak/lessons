@@ -72,11 +72,15 @@ body {
 }
 
 
-.sub-menu__item::after {
+.sub-menu__link {
+   position: relative;
+}
+
+.sub-menu__link::after {
    content: "";
    position: absolute;
-   top: 5;
-   left: 85%;
+   top: 2px;
+   left: 160px;
    width: 24px;
    height: 24px;
    background: url("../img/icons/arrow-2.svg") 0 0 no-repeat;
