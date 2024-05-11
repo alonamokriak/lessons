@@ -327,7 +327,7 @@ body {
    width: 20px;
    height: 20px;
    border: 1px solid rgb(209, 213, 213);
-   background: url("/img/icons/vector.svg") 2px 4px no-repeat;
+   background: url("../img/icons/vector.svg") 2px 4px no-repeat;
    background-color: #fff;
 }
 
