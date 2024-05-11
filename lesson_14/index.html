@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Lesson 14</title>
+
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <p class="header__title">Lesson 14: form</p>
+      </header>
+
+      <main class="page">
+
+         <div class="practice">
+            <h2 class="practice__title">Практика уроку</h2>
+            <div class="practice__container">
+               <p class="practice__text">Однорядковий ввід даних</p>
+               <form enctype="multipart/form-data" action="#" class="practice__form form">
+                  <div class="form__line">
+                     <input name="form[]" placeholder="Введіть своє прізвище" required class="form__input" type="text">
+                     <input name="form[]" placeholder="Введіть своє і'мя" required class="form__input" type="text">
+                     <input name="form[]" placeholder="Введіть свій телефон" required class="form__input" type="tel">
+                     <input name="form[]" placeholder="Введіть свою пошту" required class="form__input" type="email">
+                  </div>
+               </form>
+               <p class="practice__text"> Окремий підпис поля вводу</p>
+               <form enctype="multipart/form-data" action="#" class="practice__second-form form-second">
+                  <div class="form-second__lables">
+                     <label class="form-second__lable" for="input-01">Введіть своє і'мя</label>
+                     <input id="input-01" name="form[]" placeholder="Павло" class="form-second__input" type="text">
+                     <label class="form-second__lable" for="input-02">Введіть своє прізвище</label>
+                     <input id="input-02" name="form[]" placeholder="Петров" class="form-second__input" type="text">
+                     <label class="form-second__lable" for="input-01">Введіть свій телефон</label>
+                     <input id="input-03" name="form[]" minlength="13" maxlength="13" placeholder="+380"
+                        class="form-second__input" type="tel">
+                     <label class="form-second__lable" for="input-04">Введіть свою пошту</label>
+                     <input id="input-04" name="form[]" placeholder="example@gmail.com" class="form-second__input"
+                        type="email">
+                  </div>
+               </form>
+               <p class="practice__text"> Вибір кольору </p>
+               <form enctype="multipart/form-data" action="#" class="practice__third-form form-third">
+                  <label class="form-third__label" for="input-color">оберіть колір</label>
+                  <input name="form[]" id="input-color" value="#4169e1" class="form-third__color"
+                     type="color">
+               </form>
+               <p class="practice__text"> Пошукова система </p>
+               <form enctype="multipart/form-data" action="#" class="practice__forth-form form-forth">
+                  <input name="form[]" placeholder="Пошук" class="form-forth__input" type="search">
+               </form>
+               <p class="practice__text"> Вибір значення </p>
+               <form enctype="multipart/form-data" action="#" class="practice__fifth-form form-fifth">
+                  <input name="form[]" min="0" max="50" value="40" class="form-fifth__input form-fifth__input--range"
+                     type="range">
+               </form>
+               <div class="menu">
+                  <p class="practice__text"> Випадаючий список </p>
+                  <select name="form[select]">
+                     <option>Осінь</option>
+                     <option>Зима</option>
+                     <option selected value="03">Весна</option>
+                     <option value="04">Літо</option>
+                  </select>
+               </div>
+
+
+            </div>
+         </div>
+         <div class="krovato">
+            <form enctype="multipart/form-data" action="#" class="krovato__order">
+               <div class="order">
+                  <h1 class="title">Оформлення замовлення</h1>
+                  <div class="order__container">
+                     <div class="order__information">
+                        <img src="img/content/icon-info.svg" alt="Значок інформація">
+                        <h2 class="order__text">Інформація про покупця</h2>
+                     </div>
+                     <div class="order__form form">
+                        <div class="form__general">
+                           <input name="form[]" required placeholder="Прізвище" class="form__info" type="text">
+                           <input name="form[]" required placeholder="Ім'я" class="form__info" type="text">
+                           <input name="form[]" required placeholder="По батькові" class="form__info" type="text">
+                        </div>
+                        <div class="form__contacts">
+                           <input name="form[]" required placeholder="Контактний телефон" class="form__info" type="tel">
+                           <input name="form[]" required placeholder="E-mail" class="form__info" type="email">
+                        </div>
+                     </div>
+                     <div class="order__checkbox checkbox">
+                        <input class="checkbox__input" id="check-1" name="form[]" type="checkbox">
+                        <label class="checkbox__label" for="check-1">Отримуватиме замовлення інша людина</label>
+                     </div>
+                  </div>
+                  <div class="delivery">
+                     <div class="delivery__container">
+                        <div class="delivery__information">
+                           <img src="img/content/icon-dostavka.svg" alt="Значок інформація">
+                           <h2 class="delivery__title">Вибір способу доставки</h2>
+                        </div>
+                        <div class="delivery__content">
+                           <div class="delivery__item">
+                              <input type="radio" name="choice" class="delivery__input" id="self-delivery">
+                              <label for="self-delivery">
+                                 <img src="img/content/shop.svg" alt="Значок магазин">
+                                 <span class="delivery__subtitle">Самовивіз з магазину</span>
+                                 <span class="delivery__text">Безкоштовно</span></label>
+                           </div>
+
+                           <div class="delivery__item">
+                              <input type="radio" name="choice" class="delivery__input" id="post-delivery">
+                              <label for="post-delivery">
+                                 <img src="img/content/np.svg" alt="Значок нової пошти">
+                                 <span class="delivery__subtitle">Доставка Нова Пошта</span>
+                                 <span class="delivery__text">≈ від 500 грн</span>
+                              </label>
+                           </div>
+
+                           <div class="delivery__item">
+                              <input type="radio" name="choice" class="delivery__input" id="courier-delivery">
+                              <label for="courier-delivery">
+                                 <img src="img/content/courier.svg" alt="Значок кур'єру">
+                                 <span class="delivery__subtitle">Доставка кур'єром</span>
+                                 <span class="delivery__text">≈ від 200 грн</span>
+                              </label>
+                           </div>
+
+                        </div>
+                        <div class="delivery__location location">
+                           <img src="img/content/location.svg" alt="Значок локації">
+                           <div class="location__information">
+                              <span class="location__information-shedule">Графік роботи: щодня з 9:00 до 18:00</span>
+                              <span class="location__information-adress">м. Київ, пров. Ізяславський 52, пов. 2</span>
+                           </div>
+                           <a class="location__map" href="#">На мапі</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="payment">
+                     <div class="payment__container">
+                        <div class="payment__information">
+                           <img src="img/content/icon-oplata.svg" alt="Значок оплати">
+                           <h2 class="payment__title">Вибір способу оплати</h2>
+                        </div>
+                        <div class="payment__items">
+                           <div class="payment__item">
+                              <input type="radio" name="choice" id="payment-1">
+                              <label for="payment-1">
+                                 <span>Готівкою при отриманні (Післясплата)</span>
+                              </label>
+                           </div>
+                           <div class="payment__item">
+                              <input checked type="radio" name="choice" id="payment-2">
+                              <label for="payment-2">
+                                 <span>Оплата карткою на сайті</span>
+                                 <img src="img/content/master-card-logo.svg" alt="Значок мастеркард">
+                                 <img src="img/content/visa-card-logo.svg" alt="Значок віза">
+                              </label>
+                           </div>
+                           <div class="payment__item">
+                              <input type="radio" name="choice" id="payment-3">
+                              <label for="payment-3">
+                                 <span>Privat Pay</span>
+                                 <img src="/img/content/privat-pay-logo.svg" alt="Значок ПриватБанк">
+                              </label>
+                           </div>
+                           <div class="payment__item">
+                              <input type="radio" name="choice" id="payment-4">
+                              <label for="payment-4">
+                                 <span>Кредит від Krovato</span>
+                              </label>
+                           </div>
+                           <div class="payment__item">
+                              <input type="radio" name="choice" id="payment-5">
+                              <label for="payment-5">
+                                 <span>Оплата частинами ПриватБанк</span>
+                                 <img src="img/content/privaty-credit-logo.svg" alt="Значок оплата частинами">
+                              </label>
+                           </div>
+                           <div class="payment__item">
+                              <input type="radio" name="choice" id="payment-6">
+                              <label for="payment-6">
+                                 <span>Оплата частинами МоноБанк</span>
+                                 <img src="img/content/mono-bank-logo.svg" alt="Значок монобанку">
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="comment">
+                     <div class="comment__container">
+                        <div class="comment__information">
+                           <img src="img/content/icon-comment.svg" alt="Значок коментарію">
+                           <h2 class="comment__title">Коментар до замовлення</h2>
+                        </div>
+                        <div class="comment__item">
+                           <textarea class="comment__text" placeholder="Ваш коментар" name="comment[]"></textarea>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="button">
+                     <button class="button__submit" type="submit">Оформити замовлення</button>
+                  </div>
+               </div>
+            </form>
+         </div>
+      </main>
+   </div>
+
+
+   <footer class="footer">
+      <div class="footer__block">
+         <div class="footer__text">
+            I'm footer.
+         </div>
+      </div>
+   </footer>
+
+</body>
+
+</html>
