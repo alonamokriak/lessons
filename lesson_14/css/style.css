@@ -433,7 +433,7 @@ body {
    left: 85px;
    height: 40px;
    width: 40px;
-   background: url("/img/content/check-circle.svg") 0 0 no-repeat;
+   background: url("../img/content/check-circle.svg") 0 0 no-repeat;
    opacity: 0;
 }
 
