@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Lesson 15 - Адаптивна верстка</title>
+
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <form enctype="multipart/form-data" action="#" class="header__form">
+            <div class="header__container">
+               <div class="header__menu menu-content">
+                  <div class="menu-content__list">
+                     <ul class="menu-content__items">
+                        <li><a class="menu-content__item" href="#">Про нас</a></li>
+                        <li><a class="menu-content__item" href="#">Оплата</a></li>
+                        <li><a class="menu-content__item" href="#">Доставка та збірка</a></li>
+                        <li><a class="menu-content__item" href="#">Відгуки</a></li>
+                        <li><a class="menu-content__item" href="#">Блог</a></li>
+                        <li><a class="menu-content__item" href="#">Контакти</a></li>
+                     </ul>
+                  </div>
+                  <div class="header__wrapper wrapper-help">
+                     <p class="wrapper-help__text">Допомога та консультація:</p>
+                     <ul class="wrapper-help__text list">
+                        <li class="list__social">
+                           <a class="list__link" href="#" target="_blank"><img src="img/icons/whatsapp.svg"
+                                 alt="WhatsApp"></a>
+                        </li>
+                        <li class="list__social">
+                           <a class="list__link" href="#" target="_blank"><img src="img/icons/telegram.svg"
+                                 alt="Telegram"></a>
+                        </li>
+                        <li class="list__social">
+                           <a class="list__link" href="#" target="_blank"><img src="img/icons/viber.svg"
+                                 alt="Viber"></a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="menu-content__language language">
+                     <select name="form[select]">
+                        <option selected value="ukrainian">UA</option>
+                        <option value="polish">PL</option>
+                        <option value="english">ENG</option>
+                     </select>
+                  </div>
+               </div>
+            </div>
+            <div class="menu-header header-info">
+               <div class="header-info__logo">
+                  <img class="header-info__image" src="img/content/title-krovato.webp" alt="Логотип Кровато">
+               </div>
+               <div class="header-info__button button">
+                  <a class="button__link--icon" href="#">
+                     <img src="img/icons/menu-catalog.svg" alt="Значок католог">
+                     <p class="button__text">Каталог</p>
+                  </a>
+               </div>
+               <div class="header-info__search search">
+                  <input name="form[]" placeholder="Пошук товарів" class="search__input" type="search">
+                  <button class="search__button"></button>
+               </div>
+               <div class="header-info__telephone telephone">
+                  <a class="telephone__link" href="tel:0500000000"><img class="telephone__image"
+                        src="img/icons/icon-tel.svg" alt="Значок телефону"></a>
+                  <div class="telephone__shedule">
+                     <p class="telephone__shedule-time">Щодня з 9:00 до 18:00</p>
+                     <p class="telephone__number">067 929-45-45</p>
+                  </div>
+                  <img class="telephone__arrow" src="img/icons/arrow.svg" alt="Значок стрілочки">
+               </div>
+               <div class="header-info__icons icon">
+                  <div class="icon__search">
+                     <a class="icon__search-link" href="#"><img src="img/icons/poisk-1.svg" alt="Значок пошуку"></a>
+                  </div>
+                  <div class="icon__favourite">
+                     <a class="icon__favoutire-link" href="#"><img src="img/content/obrane.svg" alt="Знакок обране"></a>
+                  </div>
+                  <div class="icon__basket">
+                     <a class="icon__basket-link" href="#"><img src="img/content/korzina.svg" alt="Знакок обране"></a>
+                  </div>
+               </div>
+            </div>
+            <div class="menu-header catalog">
+               <div class="catalog__promo">
+                  <ul class="catalog__items">
+                     <li class="catalog__item"><a class="catalog-link" href="#"><img src="img/content/akcii.svg"
+                              alt="Значок зірочки">Акції</a></li>
+                     <li class="catalog__item"><a class="catalog-link" href="#"><img src="img/content/sale.svg"
+                              alt="Значок відсотків">Розпродаж</a></li>
+                     <li class="catalog__item"><a class="catalog-link" href="#"><img src="img/content/credit.svg"
+                              alt="Значок оплата частинами">Купити в кредит</a></li>
+                  </ul>
+               </div>
+               <div class="catalog__list">
+                  <ul class="catalog__items items-category">
+                     <li class="item-category"><a class="link-category" href="#">Дитяча</a></li>
+                     <li class="item-category"><a class="link-category" href="#">Кухня</a></li>
+                     <li class="item-category"><a class="link-category" href="#">Ванна</a></li>
+                     <li class="item-category"><a class="link-category" href="#">Спальня</a></li>
+                     <li class="item-category"><a class="link-category" href="#">Передпокій</a></li>
+                     <li class="item-category"><a class="link-category" href="#">Вітальня</a></li>
+                     <li class="item-category"><a class="link-category" href="#">Офіс</a></li>
+                  </ul>
+               </div>
+            </div>
+         </form>
+      </header>
+
+      <main class="page">
+      </main>
+
+
+      <footer class="footer">
+         <div class="footer__block">
+            <div class="footer__text">
+               I'm footer.
+            </div>
+         </div>
+      </footer>
+   </div>
+</body>
+
+</html>
