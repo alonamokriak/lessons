@@ -1,0 +1,286 @@
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Локальне підключення шрифтів */
+@import url("fonts.css");
+
+
+/* Основні стилі */
+
+body {
+   font-family: "Proxima Nova", sans-serif;
+}
+
+/* ===============  ==================== */
+
+.wrapper {
+   min-height: 100%;
+   overflow: clip;
+   display: flex;
+   flex-direction: column;
+
+}
+
+.wrapper>main {
+   flex-grow: 1;
+}
+
+[class*="__container"] {
+   max-width: 1230px;
+   margin: 0 auto;
+}
+
+.wear {
+   margin-top: 40px;
+}
+
+.wear__container {
+   border-radius: 40px;
+   background: rgb(240, 240, 240);
+}
+
+
+.wear__content {
+   font-family: "Satoshi Bold", sans-serif;
+   padding: 29px 64px 76px 64px;
+   display: grid;
+   column-gap: 20px;
+   row-gap: 10px;
+   grid-template-columns: 1fr 250px 1fr;
+
+}
+
+/* .wear__photo:nth-child(1) {
+   grid-column: 1 / 2;
+   grid-row: 1 / 2;
+
+
+}
+
+.wear__photo:nth-child(3) {
+   grid-column: 2 / 4;
+   grid-row: 1 / 2;
+
+}
+
+.wear__photo:nth-child(5) {
+   grid-column: 1 / 3;
+   grid-row: 2 / 3;
+   justify-items: start;
+}
+
+.wear__photo:nth-child(7) {
+   grid-column: 3 / 4;
+   grid-row: 2 / 3;
+} */
+
+.wear__label {
+   position: absolute;
+   z-index: 2;
+   top: 20px;
+   left: 35px;
+}
+
+.wear__subtitle {
+   position: relative;
+}
+
+.wear__photo {
+   border-radius: 20px;
+}
+
+
+.wear__title {
+   font-family: "Integral Bold", sans-serif;
+   text-transform: uppercase;
+   font-size: 48px;
+   text-align: center;
+   line-height: 1.2;
+   padding: 35px 0px;
+   /* 58/48 */
+}
+
+.wear__subtitle {
+   font-size: 36px;
+   line-height: 1.36;
+   /* 49/36 */
+}
+
+@media (min-width: 1024px) {
+
+   .wear__subtitle:nth-child(4n + 2),
+   .wear__subtitle:nth-child(4n + 3) {
+      grid-column: span 2;
+   }
+}
+
+@media (max-width: 1023px) {
+   .wear__content {
+      grid-template-columns: 50% 50%;
+   }
+
+   .wear__photo {
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 407 / 289;
+      object-fit: cover;
+   }
+}
+
+@media (max-width: 720px) {
+   .wear__content {
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 20px;
+      padding: 0px 25px 25px 25px;
+   }
+
+   .wear__photo {
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 310 / 190;
+      object-fit: cover;
+   }
+
+   .wear__title {
+
+      font-size: 32px;
+      line-height: 1.12;
+      /* 36/32 */
+
+   }
+
+   .wear__container {
+      margin-left: 16px;
+      margin-right: 16px;
+   }
+}
+
+@media (max-width: 410px) {
+   .wear__subtitle {
+      font-size: 25px;
+   }
+   .wear__label {
+      position: absolute;
+      top: 10px;
+      left: 12px;
+   }
+}
+
+
+
+
+/* Попытки сделать грид */
+
+/* STYLES */
+/* 
+.wear {
+   margin-top: 40px;
+}
+
+.wear__container {
+   border-radius: 40px;
+   background: rgb(240, 240, 240);
+
+}
+
+.wear__content {
+   font-family: "Satoshi Bold", sans-serif;
+   margin: 60px 87px 0px -64px;
+   padding-left: 105px;
+   padding-bottom: 70px;
+   display: grid;
+   column-gap: 20px;
+   row-gap: 10px;
+   grid-template-columns: 38% 11% 11% 38%;
+   grid-template-rows: repeat(auto-fill, minmax(289px, 1fr));
+}
+
+.wear__casual {
+   position: relative;
+   grid-column: 1 / 2;
+   grid-row: 1 / 2;
+}
+
+.wear__casual p {
+   position: absolute;
+   z-index: 2;
+   top: 35px;
+   left: 35px;
+}
+
+.wear__formal {
+   position: relative;
+   grid-column: 2 / 5;
+   grid-row: 1 / 2;
+}
+
+.wear__formal p {
+   position: absolute;
+   z-index: 2;
+   top: 35px;
+   left: 35px;
+}
+
+.wear__party {
+   position: relative;
+   grid-column: 1 / 4;
+   grid-row: 2 / 3;
+}
+
+.wear__party p {
+   position: absolute;
+   z-index: 2;
+   top: 35px;
+   left: 35px;
+}
+
+.wear__gym {
+   position: relative;
+   grid-column: 4 / 5;
+   grid-row: 2 / 3;
+}
+
+.wear__gym p {
+   position: absolute;
+   z-index: 2;
+   top: 35px;
+   left: 35px;
+}
+
+
+.wear__title {
+   font-family: "Integral Bold", sans-serif;
+   text-transform: uppercase;
+   font-size: 48px;
+   text-align: center;
+   line-height: 1.2;
+   /* 58/48 */
+}
+
+.wear__subtitle {
+   font-size: 36px;
+   line-height: 1.36;
+   /* 49/36 */
+}
+
+
+.wear__photo {
+   width: 100%;
+   height: 289px;
+   border-radius: 20px;
+   object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+   .wear__content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+   }
+
+   .wear__photo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+} */
