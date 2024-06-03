@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Lesson 18 - SASS / SCSS </title>
+
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__body body-header">
+            <div class="body-header__container">
+               <h2 class="body-header__title">
+                  Video Alchemist
+               </h2>
+               <button type="button" class="menu-icon">
+                  <span></span>
+               </button>
+               <div class="body-header__menu menu-body-header">
+                  <ul class="menu-body-header__list">
+                     <li class="menu-body-header__item">
+                        <a class="menu-body-header__link" href="">Home</a>
+                     </li>
+                     <li class="menu-body-header__item">
+                        <a class="menu-body-header__link" href="">About</a>
+                     </li>
+                     <li class="menu-body-header__item">
+                        <a class="menu-body-header__link" href="">Portfolio</a>
+                     </li>
+                     <li class="menu-body-header__item">
+                        <a class="menu-body-header__link" href="">Testimonials</a>
+                     </li>
+                     <li class="menu-body-header__item">
+                        <a class="menu-body-header__link" href="">Contact</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="body-header__action">
+                  <div data-da=".about-section__container, 1150" class="body-header__social social-body-header">
+                     <ul class="social-body-header__list">
+                        <li class="social-body-header__item">
+                           <a class="social-body-header__link social-body-header__link--facebook" href="">
+                              <img src="img/icons/facebook.svg" alt="Значок фейсбук">
+                           </a>
+                        </li>
+                        <li class="social-body-header__item">
+                           <a class="social-body-header__link social-body-header__link--linkedin" href="">
+                              <img src="img/icons/linkedin.svg" alt="Значок линкедин">
+                           </a>
+                        </li>
+                        <li class="social-body-header__item">
+                           <a class="social-body-header__link social-body-header__link--youtube" href="">
+                              <img src="img/icons/youtube.svg" alt="Значок youtube">
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+
+      <main class="section">
+         <div class="section__hero hero-section">
+            <div class="hero-section__container">
+               <div class="hero-section__desc desc-hero">
+                  <ul class="desc-hero__list">
+                     <li class="desc-hero__item desc-hero__item--name">Jimmy Turner</li>
+                     <li class="desc-hero__item desc-hero__item--prof">Professional video editor</li>
+                     <li class="desc-hero__item desc-hero__item--text">Making your videos look more
+                        cool.</li>
+                     <li class="desc-hero__item">
+                        <a class="desc-hero__button" href="#">Let's talk</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="hero-section__content content-hero">
+                  <div class="content-hero__pic">
+                     <img class="content-hero__main" src="img/content/hero.webp" alt="Фото">
+                  </div>
+                  <img class="content-hero__triangles content-hero__triangles--left" src="img/content/current-left.webp"
+                     alt="Photo">
+                  <img class="content-hero__triangles content-hero__triangles--right"
+                     src="img/content/current-right.webp" alt="Photo">
+                  <img class="content-hero__ae" src="img/icons/ae.svg" alt="ae">
+                  <img class="content-hero__pr" src="img/icons/pr.svg" alt="">
+               </div>
+
+            </div>
+         </div>
+         <div class="section__about about-section">
+            <div class="about-section__container">
+               <div class="about-section__info">
+                  <h2 class="about-section__title">About me</h2>
+                  <p class="about-section__text">Welcome to the cinematic realm of Jimmy, where creativity meets
+                     technology to craft visually stunning narratives. With a passion for storytelling and a keen eye
+                     for detail, I embark on a journey to transform ordinary footage into extraordinary visual
+                     experiences.</p>
+
+                  <ul class="about-section__list">
+                     <li class="about-section__item">Cash cow editing</li>
+                     <li class="about-section__item">Reels editng</li>
+                     <li class="about-section__item">Logo animation</li>
+                     <li class="about-section__item">Podcast edit</li>
+                  </ul>
+
+               </div>
+            </div>
+         </div>
+         <div class="section__portfolio portfolio-section">
+            <div class="portfolio-section__container">
+               <h2 class="portfolio-section__title">My best edits</h2>
+               <div class="portfolio-section__content content-portfolio">
+                  <div class="content-portfolio__item">
+                     <a class="content-portfolio__link" href="#">
+                        <img class="content-portfolio__pic" src="img/content/imag1.webp" alt="Фото друкуючої людини">
+                        <img class="content-portfolio__icon" src="img/icons/play.svg" alt="Значок плей">
+                        <p class="content-portfolio__text">Play video</p>
+                     </a>
+                     <a class="content-portfolio__play" href="#">Cash cow</a>
+                  </div>
+                  <div class="content-portfolio__item">
+                     <a class="content-portfolio__link" href="#">
+                        <img class="content-portfolio__pic" src="img/content/image2.webp" alt="Фото грошей">
+                        <img class="content-portfolio__icon" src="img/icons/play.svg" alt="Значок плей">
+                        <p class="content-portfolio__text">Play video</p>
+                     </a>
+                     <a class="content-portfolio__play" href="#">Reel</a>
+                  </div>
+                  <div class="content-portfolio__item">
+                     <a class="content-portfolio__link" href="#">
+                        <img class="content-portfolio__pic" src="img/content/image3.webp"
+                           alt="Фото гір та людина мотоциклі">
+                        <img class="content-portfolio__icon" src="img/icons/play.svg" alt="Значок плей">
+                        <p class="content-portfolio__text">Play video</p>
+                     </a>
+                     <a class="content-portfolio__play" href="#">Vlog</a>
+                  </div>
+                  <div class="content-portfolio__item">
+                     <a class="content-portfolio__link" href="#">
+                        <img class="content-portfolio__pic" src="img/content/image4.webp" alt="Фото">
+                        <img class="content-portfolio__icon" src="img/icons/play.svg" alt="Значок плей">
+                        <p class="content-portfolio__text">Play video</p>
+                     </a>
+                     <a class="content-portfolio__play" href="#">Cash cow</a>
+                  </div>
+                  <div class="content-portfolio__item">
+                     <a class="content-portfolio__link" href="#">
+                        <img class="content-portfolio__pic" src="img/content/image5.webp" alt="Фото">
+                        <img class="content-portfolio__icon" src="img/icons/play.svg" alt="Значок плей">
+                        <p class="content-portfolio__text">Play video</p>
+                     </a>
+                     <a class="content-portfolio__play" href="#">Cash cow</a>
+                  </div>
+                  <div class="content-portfolio__item">
+                     <a class="content-portfolio__link" href="#">
+                        <img class="content-portfolio__pic" src="img/content/image6.webp" alt="">
+                        <img class="content-portfolio__icon" src="img/icons/play.svg" alt="Значок плей">
+                        <p class="content-portfolio__text">Play video</p>
+                     </a>
+                     <a class="content-portfolio__play" href="#">podcast</a>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+
+      </main>
+   </div>
+
+
+
+
+
+   <footer class="footer">
+      <div class="footer__block">
+         <div class="footer__text">
+            I'm footer.
+         </div>
+      </div>
+   </footer>
+   <script src="js/dynamic_adapt.js"></script>
+</body>
+
+
+</html>
