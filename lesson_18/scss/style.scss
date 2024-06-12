@@ -101,13 +101,13 @@ body {
 
    &__action {
       position: relative;
+
+      @media (max-width: 1135px) {
+         display: none;
+      }
    }
 
    &__social {}
-}
-
-@mixin animate($animation, $duration, $method, $fillmode) {
-   animation: $animation $duration $method $fillmode;
 }
 
 @keyframes headerAnim {
@@ -124,6 +124,44 @@ body {
 
 
 .menu-body-header {
+
+   // Неправильно названо, необходимо в соответсвии с БЭМ - это меню бургер
+   .menu-icon {
+      display: none;
+
+      @media (max-width: 1090px) {
+         display: block;
+         position: relative;
+         top: 0;
+         left: 0;
+         height: 18px;
+         width: 30px;
+         margin-right: 20px;
+      }
+      &::before,
+      &::after,
+      span {
+         content: "";
+         height: 2px;
+         width: 100%;
+         position: absolute;
+         right: 0;
+         background-color: #fff;
+      }
+   
+      &::before {
+         top: 0;
+      }
+   
+      &::after {
+         bottom: 0;
+      }
+   
+      span {
+         top: 50%;
+         transform: translate(0, -50%);
+      }
+   }
 
    &__list {
       display: flex;
@@ -183,6 +221,7 @@ body {
       transition: all 0.3s;
 
       img {
+         object-fit: contain;
          width: 20px;
          height: 20px;
       }
@@ -199,53 +238,6 @@ body {
    }
 
 
-}
-
-
-
-.menu-icon {
-   display: none;
-
-   @media (max-width: 1090px) {
-      display: block;
-      position: relative;
-      top: 0;
-      left: 40%;
-      height: 18px;
-      width: 30px;
-      margin-right: 20px;
-   }
-
-   // margin-right Це здається також як костиль, але вже ніяк в голову не приходить як його адаптувати
-   // 
-
-   @media (max-width: 520px) {
-      left: 25%;
-   }
-
-   &::before,
-   &::after,
-   span {
-      content: "";
-      height: 2px;
-      width: 100%;
-      position: absolute;
-      right: 0;
-      background-color: #fff;
-   }
-
-   &::before {
-      top: 0;
-   }
-
-   &::after {
-      bottom: 0;
-   }
-
-   span {
-      top: 50%;
-      transform: translate(0, -50%);
-   }
 }
 
 // Main
@@ -327,6 +319,7 @@ body {
    &__item {
       font-family: "Exo", sans-serif;
       color: white;
+      z-index: 5;
 
       &--name {
          position: relative;
@@ -365,6 +358,7 @@ body {
          /* 70/80 */
          /* or 88% */
          text-transform: uppercase;
+         z-index: 5;
 
          @media (max-width: 1230px) {
             font-size: 35px;
@@ -384,6 +378,7 @@ body {
          /* 40/18 */
          letter-spacing: -0.02em;
          text-transform: capitalize;
+         z-index: 5;
 
          @media (max-width: 425px) {
             font-size: 14px;
@@ -441,7 +436,7 @@ body {
    &__pic {
       z-index: 5;
       aspect-ratio: 688 / 508;
-      object-fit: cover;
+      object-fit: contain;
       margin-top: 40px;
       margin-right: 50px;
 
@@ -633,18 +628,17 @@ body {
          content: "";
          position: absolute;
          bottom: 1px;
-         left: 34%;
+         left: 50%;
          height: 1px;
          width: 401px;
+         transform: translateX(-50%);
          background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(66, 255, 0, 1) 49%, rgba(36, 0, 255, 1) 100%);
 
          @media (max-width: 768px) {
             width: 142px;
          }
 
-         @media (max-width: 375px) {
-            left: 28%;
-         }
+         @media (max-width: 375px) {}
 
       }
    }
@@ -652,7 +646,7 @@ body {
    &__text {
       font-weight: 400;
       font-size: 18px;
-      line-height: 40px;
+      line-height: 2.22; /* 40/18 */
       text-align: center;
       letter-spacing: -0.02em;
       text-transform: capitalize;
@@ -927,4 +921,3 @@ body {
       font-weight: 600;
    }
 }
-
